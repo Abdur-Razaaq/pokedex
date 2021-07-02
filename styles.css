@@ -54,6 +54,15 @@ button {
   width: 15vw;
 }
 
+button:hover {
+  background-color: aqua;
+  border: 2px solid white;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #350f06;
+  font-weight: bold;
+  transform: translateY(-7px);
+}
+
 span.ripple {
   position: absolute;
   border-radius: 50%;
