@@ -142,6 +142,8 @@ p {
     border: transparent;
     border-radius: none;
     background-color: transparent;
+    height: 15vh;
+    width: 15vh;
   }
   .pokemon-list-container {
     width: 35vw;
