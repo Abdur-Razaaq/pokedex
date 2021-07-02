@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: red;
+  background-image: url(./images/kyogre.jpg);
+  height: 100vh;
+}
+
+.poke-img {
+  width: 50vw;
+  margin: auto;
+  backdrop-filter: blur(3px);
+}
+.img-con {
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  margin-top: -18%;
+  padding-bottom: 0%;
+}
+.intro {
+  padding: 5% 5%;
+  padding-top: 0%;
+  text-align: center;
+}
+.intro-text {
+  color: white;
+  text-shadow: 2px 2px blue;
+  backdrop-filter: blur(5px);
+  text-transform: uppercase;
+}
+
+.title {
+  padding: 0%;
+}
+
+a {
+  cursor: pointer;
+  width: 15vw;
+}
+
+button {
+  border-radius: 20px;
+  padding: 1% 3%;
+  border: none;
+  margin: 1%;
+  text-transform: uppercase;
+  border: 2px solid black;
+  background-color: white;
+  width: 15vw;
+}
+
+button:hover {
+  background-color: aqua;
+  border: 2px solid white;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #350f06;
+  font-weight: bold;
+  transform: translateY(-7px);
+}
+
+span.ripple {
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple 600ms linear;
+  background: radial-gradient(white 10%, red 40%, blue 50%, yellow 20%);
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(10);
+    opacity: 0;
+  }
+}
+
+.pokemon-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: rgba(3, 71, 94, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.info {
+  padding: 5% 5%;
+  padding-top: 0%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.pokemon-list-container {
+  width: 70%;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  padding: 5% 10%;
+  padding-top: 0%;
+  padding-bottom: 1%;
+}
+
+.sprite {
+  height: 25vh;
+  width: 25vh;
+  font-size: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: blanchedalmond;
+  margin: auto;
+}
+
+p {
+  text-transform: uppercase;
+  font-size: 100%;
+  padding: 1%;
+  color: yellow;
+  border: 2px solid white;
+  background-color: chocolate;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .sprite {
+    border: transparent;
+    border-radius: none;
+    background-color: transparent;
+  }
+  .pokemon-list-container {
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  button {
+    width: 35vw;
+  }
+  .poke-img {
+    width: 70vw;
+    margin: auto;
+    backdrop-filter: blur(3px);
+  }
+}
